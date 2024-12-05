@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<script src='projectJS.js'></script>
+	
+	<style>
+		.banner {
+			border:solid;
+			border-color:#ff5555;
+			border-width:10px;
+			background-color:#ffaaaa;
+			margin:auto;
+			font-size:40px;
+			text-align:center;
+			font-weight:bold;
+		}
+		
+		#form {
+			border:solid;
+			border-color:#ff5555;
+			border-width:5px;
+		}
+	</style>
+	
+	<head>
+		<title>WEB-115 Final Project</title>
+	</head>
+	
+	<body>
+		<div class="banner">
+			The name and section number have been redacted, since this is my personal GitHub account and I don't want to give away any information about myself to the Internet.<hr style="color:#ff5555"><i>Build Your Meal Plan</i>
+		</div>
+		<br>
+		<div id='form'>
+			<form>
+				<h2>Personal Information</h2>
+				<input type='text' id='input_name' name='input_name'>
+				<label for='input_name'>Name</label>
+				<br>
+				<input type='text' id='input_email' name='input_email'>
+				<label for='input_email'>Email address</label>
+				<br>
+				<input type='text' id='input_goal' name='input_goal'>
+				<label for='input_goal'>Your goal for this week</label>
+				<br>
+				<h2>Foods for each meal</h2>			
+				<input type='text' id='input_breakfast' name='input_breakfast'>
+				<label>Breakfast</label>
+				<br>
+				<input type='text' id='input_snack1' name='input_snack1'>
+				<label>Snack #1</label>
+				<br>
+				<input type='text' id='input_lunch' name='input_lunch'>
+				<label>Lunch</label>
+				<br>
+				<input type='text' id='input_snack2' name='input_snack2'>
+				<label>Snack #2</label>
+				<br>
+				<input type='text' id='input_dinner' name='input_dinner'>
+				<label>Dinner</label>
+				<hr>
+			</form>
+			
+			<button onclick='clearForm()'>CLEAR</button>
+			<button onclick='downloadData()'>DOWNLOAD</button>
+			<button onclick='makeWindow(true)'>DISPLAY</button>
+		</div>
+	</body>
+</html>
